@@ -1,0 +1,15 @@
+* Convert the program from Java to C++
+
+* Modify the system memory to support multi-master and multi-slave
+
+* Modify the performace analyser mode, and trace mode for partial logs and multiprocessors 
+
+* Modify the simulation kernel to suport multiprocessors and parts with diferent frequencies of operation
+
+* Others CPUs support (PowerPC, OpenRisc, etc...)
+
+* Implement the cache of Xilinx MicroBlaze
+
+* Implement the MMU and interrput controller of Xilinx MicroBlaze
+
+* Implement the Xilinx MicroBlaze five stages pipeline
