@@ -7,8 +7,7 @@ Xilinx MicroBlaze cycle accurate simulator.
 
 Overview
 =====
-This software is a simulation, profiling, debugger and trace tool
-for the MicroBlaze soft processor, from Xilinx.
+This software is a simulation, profiling, debugger and trace tool for the MicroBlaze soft processor, from Xilinx.
 
 
 Features
@@ -78,17 +77,11 @@ the "systemconfig.xml" file present in the same folder as sample (don't modify o
   Check if you have the Java installed in your system is equal or greater then version 1.6.0.
 
 
-* How to run the test programs?
-
-  The test programs can be found in "test_programs_executable" folder, present in installation 
-software directory. Then change to the program folder you want to test, and run the simulation from 
-there.
-
 
 * What i need for rebuild or build an program for the simulator?
 
   You must have an version of the mb-gcc, i recommend the use of the Microblaze GNU Toolchain 
-(Xilinx EDK 8.1.01) included in Development Tools instalation software.
+(Xilinx EDK 8.1.01) (mb-gcc v3.4.1) included in Development Tools instalation software.
 
 
 * Dhrystone benchmark v2.1 in test programs give always the same result?
@@ -127,14 +120,14 @@ sequence of commands that all GDB programs must support to execute the same func
 Comparation with Xilinx MicroBlaze v6.0
 =====
 * The simulation system doesn't suport the following features
-  - Instruction cache, (not yet implement in the FireWorks processor)
-  - Data cache, (not yet implement in the FireWorks processor)
-  - Floating point unit (FPU), (not yet implement in the FireWorks processor)
-  - Fast simplex link (FSL), (not yet implement in the FireWorksl processor)
-  - OPB Memory, only support one memory bank (implement as in the FireWorks processor)
+  - Instruction cache, (not yet implement)
+  - Data cache, (not yet implement)
+  - Floating point unit (FPU), (not yet implement)
+  - Fast simplex link (FSL), (not yet implement)
+  - OPB Memory, only support one memory bank
 
 * The simulation system have the following limitations
-  - Instruction in OPB Memory is read in one clock cycle, (not yet implement in the FireWorks processor)
+  - Instruction in OPB Memory is read in one clock cycle, (not yet implement)
 
 
 Changes
