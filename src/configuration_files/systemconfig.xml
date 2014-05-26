@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SYSTEMCONFIGURATION SYSTEM "systemconfig.dtd">
+<SYSTEMCONFIGURATION>
+	<DESCRIPTION>
+		<NAME>FireWorks System</NAME>
+		<VERSION>1.0</VERSION>
+		<AUTHOR>João Ferreira</AUTHOR>
+		<COMPANY>Alentejo, S.A.</COMPANY>
+		<DATE>26/05/2014</DATE>
+		<OBS>Test system</OBS>
+	</DESCRIPTION>
+	<MEMORY>		
+		<LMB read="2" write="2" end="0000ffff"/>
+		<OPB read="2" write="1" begin="80200000" end="8020ffff"/>
+		<MAPPED cycle="16"/>
+	</MEMORY>
+	<DEVICE>
+		<DEVCLASS>opbtimercounter</DEVCLASS>
+		<LATENCY read="8" write="4"/>
+		<REG name="tcsr0" address="80004000"/>
+		<REG name="tlr0"  address="80004004"/>
+		<REG name="tcr0"  address="80004008"/>
+		<REG name="tcsr1" address="80004010"/>
+		<REG name="tlr1"  address="80004014"/>
+		<REG name="tcr1"  address="80004018"/>
+	</DEVICE>
+	<DEVICE>
+		<DEVCLASS>opbuartlite</DEVCLASS>
+		<LATENCY read="8" write="4"/>
+		<REG name="rx"      address="80004100"/>
+		<REG name="tx"      address="80004104"/>
+		<REG name="status"  address="80004108"/>
+		<REG name="control" address="80004110"></REG>
+	</DEVICE>
+	<CPU>
+		<CPUCLASS>microblaze_3sp</CPUCLASS>
+		<FREQ>50000000</FREQ>
+		<INST name="add"/>
+		<INST name="addc"/>
+		<INST name="addi"/>
+		<INST name="addic"/>
+		<INST name="addik"/>
+		<INST name="addikc"/>
+		<INST name="addk"/>
+		<INST name="addkc"/>
+		<INST name="and"/>
+		<INST name="andi"/>
+		<INST name="andn"/>
+		<INST name="andni"/>
+		<INST name="beq"	cond_latency="1"/>
+		<INST name="beqd"	cond_latency="1"/>
+		<INST name="beqi"	cond_latency="1"/>
+		<INST name="beqid"	cond_latency="1"/>
+		<INST name="bge"	cond_latency="1"/>
+		<INST name="bged"	cond_latency="1"/>
+		<INST name="bgei"	cond_latency="1"/>
+		<INST name="bgeid"	cond_latency="1"/>
+		<INST name="bgt"	cond_latency="1"/>
+		<INST name="bgtd"	cond_latency="1"/>
+		<INST name="bgti"	cond_latency="1"/>
+		<INST name="bgtid"	cond_latency="1"/>
+		<INST name="ble"	cond_latency="1"/>
+		<INST name="bled"	cond_latency="1"/>
+		<INST name="blei"	cond_latency="1"/>
+		<INST name="bleid"	cond_latency="1"/>
+		<INST name="blt"	cond_latency="1"/>
+		<INST name="bltd"	cond_latency="1"/>
+		<INST name="blti"	cond_latency="1"/>
+		<INST name="bltid"	cond_latency="1"/>
+		<INST name="bne"	cond_latency="1"/>
+		<INST name="bned"	cond_latency="1"/>
+		<INST name="bnei"	cond_latency="1"/>
+		<INST name="bneid"	cond_latency="1"/>
+		<INST name="br"/>
+		<INST name="bra"/>
+		<INST name="brad"/>
+		<INST name="brai"/>
+		<INST name="braid"/>
+		<INST name="brald"/>
+		<INST name="bralid"/>
+		<INST name="brd"/>
+		<INST name="bri"/>
+		<INST name="brid"/>
+		<INST name="brk"	latency="3"/>
+		<INST name="brki"	latency="3"/>
+		<INST name="brld"/>
+		<INST name="brlid"/>
+		<INST name="bsll"	latency="2"/>
+		<INST name="bslli"	latency="2"/>
+		<INST name="bsra"	latency="2"/>
+		<INST name="bsrai"	latency="2"/>
+		<INST name="bsrl"	latency="2"/>
+		<INST name="bsrli"	latency="2"/>
+		<INST name="cmp"/>
+		<INST name="cmpu"/>
+		<INST name="idiv"	latency="34"/>
+		<INST name="idivu"	latency="34"/>
+		<INST name="imm"/>
+		<INST name="lbu"/>
+		<INST name="lbui"/>
+		<INST name="lhu"/>
+		<INST name="lhui"/>
+		<INST name="lw"/>
+		<INST name="lwi"/>
+		<INST name="mfs"/>
+		<INST name="msrclr"/>
+		<INST name="msrset"/>
+		<INST name="mts"/>
+		<INST name="mul"	latency="3"/>
+		<INST name="mulh"	latency="3"/>
+		<INST name="mulhu"	latency="3"/>
+		<INST name="muli"	latency="3"/>
+		<INST name="or"/>
+		<INST name="ori"/>
+		<INST name="pcmpbf"/>
+		<INST name="pcmpeq"/>
+		<INST name="pcmpne"/>
+		<INST name="rsub"/>
+		<INST name="rsubc"/>
+		<INST name="rsubi"/>
+		<INST name="rsubic"/>
+		<INST name="rsubik"/>
+		<INST name="rsubikc"/>
+		<INST name="rsubk"/>
+		<INST name="rsubkc"/>
+		<INST name="rtbd"/>
+		<INST name="rted"/>
+		<INST name="rtid"/>
+		<INST name="rtsd"/>
+		<INST name="sb"		latency="1"/>
+		<INST name="sbi"	latency="1"/>
+		<INST name="sext16"/>
+		<INST name="sext8"/>
+		<INST name="sh"		latency="1"/>
+		<INST name="shi"	latency="1"/>
+		<INST name="sra"/>
+		<INST name="src"/>
+		<INST name="srl"/>
+		<INST name="sw"		latency="1"/>
+		<INST name="swi"	latency="1"/>
+		<INST name="xor"/>
+		<INST name="xori"/>
+	</CPU>
+</SYSTEMCONFIGURATION>

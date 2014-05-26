@@ -1,0 +1,32 @@
+#--------------------------------------------------------------------------------
+# File: Makefile.clock
+# Author: Joao Ferreira
+# E-mail: joao.dos.santos@gmail.com
+# Version: 0.0.0.1
+# Date: 10-09-2010
+# Obs: 
+#--------------------------------------------------------------------------------
+
+CC = mb-gcc
+CC_FLAGS = -Wall -mxl-barrel-shift -mno-xl-soft-div -mno-xl-soft-mul -xl-mode-executable
+CC_CLOCK = -DCLOCK
+
+NAME = quicksort
+
+SOURCE = $(NAME).c
+	
+all: $(NAME)
+	
+$(NAME): $(SOURCE) cw_timer.o cw_stdio.o
+	$(CC) -O2 -o $@.clock  $^ $(CC_CLOCK) $(CC_FLAGS)
+
+cw_timer.o: cw_timer.c
+	$(CC) -O2 -c $< $(CC_FLAGS)
+
+cw_stdio.o: cw_stdio.c
+	$(CC) -O2 -c $< $(CC_FLAGS)
+
+clean:
+	rm -f *.o $(NAME)
+
+

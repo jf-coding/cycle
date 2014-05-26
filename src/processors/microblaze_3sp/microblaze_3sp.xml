@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE CPUCONFIGURATION SYSTEM "cpuonfig.dtd">
+<CPUCONFIGURATION>
+	<DESCRIPTION>
+		<NAME>Xilinx MicroBlaze Three Stage Pipeline</NAME>
+		<VERSION>6.0</VERSION>
+		<AUTHOR>João Ferreira</AUTHOR>
+		<COMPANY>Alentejo, S.A.</COMPANY>
+		<DATE>26/05/2014</DATE>
+		<OBS>Test cpu</OBS>
+	</DESCRIPTION>
+	<CPUCLASS name="microblaze_3sp" gcc_id="baab" number="105"/>
+	<PIPELINE stages="3" execute="3"/>
+	<INST name="add"/>
+	<INST name="addc"/>
+	<INST name="addi"/>
+	<INST name="addic"/>
+	<INST name="addik"/>
+	<INST name="addikc"/>
+	<INST name="addk"/>
+	<INST name="addkc"/>
+	<INST name="and"/>
+	<INST name="andi"/>
+	<INST name="andn"/>
+	<INST name="andni"/>
+	<INST name="beq"	cond="1"/>
+	<INST name="beqd"	cond="1"/>
+	<INST name="beqi"	cond="1"/>
+	<INST name="beqid"	cond="1"/>
+	<INST name="bge"	cond="1"/>
+	<INST name="bged"	cond="1"/>
+	<INST name="bgei"	cond="1"/>
+	<INST name="bgeid"	cond="1"/>
+	<INST name="bgt"	cond="1"/>
+	<INST name="bgtd"	cond="1"/>
+	<INST name="bgti"	cond="1"/>
+	<INST name="bgtid"	cond="1"/>
+	<INST name="ble"	cond="1"/>
+	<INST name="bled"	cond="1"/>
+	<INST name="blei"	cond="1"/>
+	<INST name="bleid"	cond="1"/>
+	<INST name="blt"	cond="1"/>
+	<INST name="bltd"	cond="1"/>
+	<INST name="blti"	cond="1"/>
+	<INST name="bltid"	cond="1"/>
+	<INST name="bne"	cond="1"/>
+	<INST name="bned"	cond="1"/>
+	<INST name="bnei"	cond="1"/>
+	<INST name="bneid"	cond="1"/>
+	<INST name="br"/>
+	<INST name="bra"/>
+	<INST name="brad"/>
+	<INST name="brai"/>
+	<INST name="braid"/>
+	<INST name="brald"/>
+	<INST name="bralid"/>
+	<INST name="brd"/>
+	<INST name="bri"/>
+	<INST name="brid"/>
+	<INST name="brk"/>
+	<INST name="brki"/>
+	<INST name="brld"/>
+	<INST name="brlid"/>
+	<INST name="bsll"/>
+	<INST name="bslli"/>
+	<INST name="bsra"/>
+	<INST name="bsrai"/>
+	<INST name="bsrl"/>
+	<INST name="bsrli"/>
+	<INST name="cmp"/>
+	<INST name="cmpu"/>
+	<INST name="idiv"/>
+	<INST name="idivu"/>
+	<INST name="imm"/>
+	<INST name="lbu"/>
+	<INST name="lbui"/>
+	<INST name="lhu"/>
+	<INST name="lhui"/>
+	<INST name="lw"/>
+	<INST name="lwi"/>
+	<INST name="mfs"/>
+	<INST name="msrclr"/>
+	<INST name="msrset"/>
+	<INST name="mts"/>
+	<INST name="mul"/>
+	<INST name="mulh"/>
+	<INST name="mulhu"/>
+	<INST name="muli"/>
+	<INST name="or"/>
+	<INST name="ori"/>
+	<INST name="pcmpbf"/>
+	<INST name="pcmpeq"/>
+	<INST name="pcmpne"/>
+	<INST name="rsub"/>
+	<INST name="rsubc"/>
+	<INST name="rsubi"/>
+	<INST name="rsubic"/>
+	<INST name="rsubik"/>
+	<INST name="rsubikc"/>
+	<INST name="rsubk"/>
+	<INST name="rsubkc"/>
+	<INST name="rtbd"/>
+	<INST name="rted"/>
+	<INST name="rtid"/>
+	<INST name="rtsd"/>
+	<INST name="sb"/>
+	<INST name="sbi"/>
+	<INST name="sext16"/>
+	<INST name="sext8"/>
+	<INST name="sh"/>
+	<INST name="shi"/>
+	<INST name="sra"/>
+	<INST name="src"/>
+	<INST name="srl"/>
+	<INST name="sw"/>
+	<INST name="swi"/>
+	<INST name="xor"/>
+	<INST name="xori"/>
+</CPUCONFIGURATION>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE DEVICECONFIGURATION SYSTEM "deviceconfig.dtd">
+<DEVICECONFIGURATION>
+	<DESCRIPTION>
+		<NAME>OPB Timer/Counter</NAME>
+		<VERSION>1.00b</VERSION>
+		<AUTHOR>João Ferreira</AUTHOR>
+		<COMPANY>Alentejo, S.A.</COMPANY>
+		<DATE>26/05/2014</DATE>
+		<OBS>Test system</OBS>
+	</DESCRIPTION>
+	<DEVCLASS name="opbtimercounter" number="6"/>
+	<REG>tcsr0</REG>
+	<REG>tcsr1</REG>
+	<REG>tlr0</REG>
+	<REG>tlr1</REG>
+	<REG>tcr0</REG>
+	<REG>tcr1</REG>
+</DEVICECONFIGURATION>

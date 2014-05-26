@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE DEVICECONFIGURATION SYSTEM "deviceconfig.dtd">
+<DEVICECONFIGURATION>
+	<DESCRIPTION>
+		<NAME>OPB UART Lite</NAME>
+		<VERSION>1.00b</VERSION>
+		<AUTHOR>João Ferreira</AUTHOR>
+		<COMPANY>Alentejo, S.A.</COMPANY>
+		<DATE>26/05/2014</DATE>
+		<OBS>Test System</OBS>
+	</DESCRIPTION>
+	<DEVCLASS name="opbuartlite" number="4"/>
+	<REG>control</REG>
+	<REG>status</REG>
+	<REG>rx</REG>
+	<REG>tx</REG>
+</DEVICECONFIGURATION>

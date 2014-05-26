@@ -1,0 +1,30 @@
+#--------------------------------------------------------------------------------
+# File: Makefile.-O3
+# Author: Joao Ferreira
+# E-mail: joao.dos.santos@gmail.com
+# Version: 0.0.0.1
+# Date: 10-09-2010
+# Obs: 
+#--------------------------------------------------------------------------------
+
+CC = mb-gcc
+CC_FLAGS = -Wall -mxl-barrel-shift -mno-xl-soft-div -mno-xl-soft-mul -xl-mode-executable
+CC_OPT = -O3
+
+NAME = dhrystone
+	
+all: $(NAME)
+	
+$(NAME): dhry21a.c dhry21b.c cw_timer.o cw_stdio.o
+	$(CC) $(CC_OPT) -o $@.-O3  $^ $(CC_FLAGS)
+
+cw_timer.o: cw_timer.c
+	$(CC) $(CC_OPT) -c $< $(CC_FLAGS)
+	
+cw_stdio.o: cw_stdio.c
+	$(CC) $(CC_OPT) -c $< $(CC_FLAGS)
+
+clean:
+	rm -f *.o $(NAME)
+
+

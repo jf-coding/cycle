@@ -1,0 +1,28 @@
+#--------------------------------------------------------------------------------
+# File: Makefile
+# Author: Joao Ferreira
+# E-mail: joao.dos.santos@gmail.com
+# Version: 0.0.0.1
+# Date: 10-09-2010
+# Obs: 
+#--------------------------------------------------------------------------------
+
+CC = mb-gcc
+CC_FLAGS = -Wall -mxl-barrel-shift -mno-xl-soft-div -mno-xl-soft-mul -xl-mode-executable
+
+NAME = hanoi
+
+SOURCE = $(NAME).c
+	
+all: $(NAME)
+	
+$(NAME): $(SOURCE) cw_stdio.o
+	$(CC) -O2 -o $@  $^ $(CC_FLAGS)
+	
+cw_stdio.o: cw_stdio.c
+	$(CC) -O2 -c $< $(CC_FLAGS)
+
+clean:
+	rm -f *.o $(NAME)
+
+
