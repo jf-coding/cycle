@@ -151,4 +151,3 @@ to email me, although the author might not be able to reply to it.
 
 João Ferreira
 e-mail: joao.dos.santos@gmail.com
-
