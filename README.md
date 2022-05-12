@@ -142,7 +142,4 @@ You must read the license file and agree to use this software.
 
 If you have some comments, suggestions or bug reports, please feel free 
 to email me, although the author might not be able to reply to it.
-
-João Ferreira
-e-mail: joao.dos.santos@gmail.com
-
+  
